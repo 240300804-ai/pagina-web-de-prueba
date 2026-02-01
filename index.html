@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<div class="info">
+        <p><strong>Hecho por:</strong> Pedro Emilio Ojeda Corzo</p>
+        <p><strong>Matrícula:</strong> 240300804</p>
+        <p><strong>Materia:</strong> Programación Web</p>
+        <p><strong>Fecha:</strong> 31 de enero de 2026</p>
+        <p>Validación de formularios con JS</p>
+</div>
+<body>
+
+    <div class="contenedor">
+        <img src="logo.png" alt="Logo">
+        <h2 class="titulo">Regístrate</h2>
+
+        <form id="formRegistro" onsubmit="return validateForm()">
+            <label>Nombre</label>
+            <input type="text" id="nombre">
+
+            <label>Correo</label>
+            <input type="email" id="correo">
+
+            <label>Contraseña</label>
+            <input type="password" id="password">
+
+            <label>Teléfono</label>
+            <input type="tel" id="telefono">
+
+            <label>Edad</label>
+            <input type="number" id="edad">
+
+            <label>Fecha de nacimiento</label>
+            <input type="date" id="fecha">
+
+            <label>Género</label>
+            <div class="radio-group">
+                <input type="radio" name="genero"> Masculino
+                <input type="radio" name="genero"> Femenino
+                <input type="radio" name="genero"> Otro
+            </div>
+
+            <label>Color favorito</label>
+            <input type="color">
+
+            <label>
+                <input type="checkbox" id="terminos">
+                Acepto los términos y condiciones
+            </label><br><br>
+
+            <button type="submit" class="liquid">Registrarse</button><br><br>
+        </form>
+    </div>
+
+    <!-- Enlace al JavaScript (SIEMPRE al final) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
